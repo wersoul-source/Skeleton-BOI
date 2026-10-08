@@ -14,3 +14,5 @@ Reviewed: 2026-10-08. These are selective summaries of relevant pages, not a ful
 Requested DeepWiki URL: https://deepwiki.com/artificial-intelligence-first/ssot — fetch failed during study; the project's GitHub README was read instead. Do not claim the DeepWiki content was inspected. ReadMe is a documentation product, not a universal README.md specification. Manifest is portable AI context guidance, not an application dependency manifest. MIT CommKit discusses research file organization; USA adapts its map/separation ideas to software rather than treating it as a mandated app architecture.
 
 USA does not adopt SSOT's full eleven-section format for every file. It uses canonical ownership and traceable changes at the scale of this template. No runtime connection to these sites or hosted services is required.
+
+Credit: [Skeleton-BOI](https://github.com/wersoul-source/Skeleton-BOI)

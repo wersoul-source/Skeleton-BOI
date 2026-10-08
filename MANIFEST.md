@@ -1,5 +1,7 @@
 # Context manifest
 
+Without usa.project.json follow START_HERE_AGENT.md initialization. With that file, load current answers/map and resume; never repeat the questionnaire or clone.
+
 ## Load by task
 
 | Level | Read | Use |
@@ -18,3 +20,5 @@
 - README links to authoritative files instead of duplicating changing details.
 
 When sources disagree, surface the contradiction and follow the user's direct correction within higher-priority operating constraints. Preserve provenance: reported requirement, inferred decision, observed evidence. Never promote an assumption to a verified fact. This is project context, not a copy of the user's personal memory.
+
+Credit: [Skeleton-BOI](https://github.com/wersoul-source/Skeleton-BOI)

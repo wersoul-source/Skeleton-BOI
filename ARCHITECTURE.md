@@ -2,7 +2,7 @@
 
 ## Outcome
 
-Convert five product answers into a minimal, inspectable structural scaffold. Preserve responsibilities across different layouts. Product runtime implementation is outside this template.
+Read designated files → ask five answers including destination → review examples → clone into selected workspace → adapt files/plans → validate → ask appearance and wait. Convert product answers into a minimal, inspectable structural scaffold. Preserve responsibilities across different layouts. Product runtime implementation is outside this template.
 
 ## Program map
 
@@ -48,3 +48,5 @@ Symlink/path/conflict checks guard accidental writes, not hostile concurrent mod
 ## Verification / evolution
 
 Run the commands in AGENTS.md. Changes to roles, config or rendering require tests and an ADR. Future runtime builds, dependency boundaries, auth and deployment must receive their own evidence. Last updated: 2026-10-08.
+
+Credit: [Skeleton-BOI](https://github.com/wersoul-source/Skeleton-BOI)

@@ -18,3 +18,5 @@ Outcome comes from q1/q5. Structure maps logical roles to physical paths. Mechan
 Roles do not require eight services or packages. In a small framework project, use its native modules and map them in project config; do not create layers with no responsibility. The starter generator uses separate folders for visibility only.
 
 Invariant: change path names without changing responsibilities or dependency direction. Path changes must update canonical config and derived documentation together. Schema/version or external contract changes require explicit compatibility decisions.
+
+Credit: [Skeleton-BOI](https://github.com/wersoul-source/Skeleton-BOI)

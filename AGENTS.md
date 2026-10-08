@@ -2,7 +2,7 @@
 
 ## Entry / scope
 
-Read START_HERE_AGENT.md, MANIFEST.md and ARCHITECTURE.md before editing. If asked to initialize a product, follow the five-question workflow. If asked to maintain this template, edit only the requested template behavior; do not launch initialization questions.
+On entering this repository to start a product, immediately read the files listed in START_HERE_AGENT.md and follow read → ask five (including destination/folder) → review examples → clone → adapt → validate → ask appearance. Wait for answers before clone/write; do not wait for another start command. With usa.project.json, resume the initialized product without asking/cloning again. If asked to maintain this template, edit only the requested template behavior; do not launch initialization questions.
 
 Report to the user in Thai unless they request another language. Internal code identifiers may use English.
 
@@ -27,4 +27,6 @@ Use a fresh isolated output root for generation. Tooling does not provide a file
 
 ## Completion
 
-Verify mapping, docs, tests and handoff. Separate PASS, FAIL and NOT_RUN. Stop after scaffold handoff when the task is initialization; Dev owns product implementation. The file is guidance, not a sandbox or guaranteed agent enforcement.
+Verify mapping, docs, tests and handoff. Separate PASS, FAIL and NOT_RUN. After successful scaffold validation, report the actual destination and end with “เตรียมโครงสร้างเสร็จแล้ว ต้องการหน้าตาโปรแกรมแบบไหนครับ”. Wait for the appearance answer before UI work; Dev owns product implementation. The file is guidance, not a sandbox or guaranteed agent enforcement.
+
+Credit: [Skeleton-BOI](https://github.com/wersoul-source/Skeleton-BOI)

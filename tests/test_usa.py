@@ -58,6 +58,20 @@ class ScaffoldTests(unittest.TestCase):
             self.config['paths']=paths
             with self.assertRaises(ValueError): self.load()
 
+    def test_project_credit_reentry_and_plan_edits(self):
+        self.config['paths']={'docs':'knowledge'}
+        c=self.load(); out=self.root/'out'; usa.initialize(c,out,True)
+        for rel in ('README.md','AGENTS.md','ARCHITECTURE.md','knowledge/PLAN.md','knowledge/SYSTEM_FLOW.md','knowledge/HANDOFF.md'):
+            self.assertTrue((out/rel).read_text(encoding='utf-8').endswith(usa.CREDIT))
+        self.assertIn('knowledge/PLAN.md',(out/'README.md').read_text(encoding='utf-8'))
+        self.assertIn('ไม่ถาม initialization 5 ข้อ',(out/'AGENTS.md').read_text(encoding='utf-8'))
+        self.assertIn('ต้องการหน้าตาโปรแกรมแบบไหนครับ',(out/'README.md').read_text(encoding='utf-8'))
+        p=out/'knowledge/PLAN.md'
+        p.write_text(p.read_text(encoding='utf-8').replace('## Mechanism','## Mechanism\n\nProduct-specific details'),encoding='utf-8')
+        usa.validate(out)
+        p.write_text('## Outcome\n'+usa.CREDIT,encoding='utf-8')
+        with self.assertRaises(ValueError): usa.validate(out)
+
     def test_missing_or_empty_answers(self):
         del self.config['answers']['q5']
         with self.assertRaises(ValueError): self.load()

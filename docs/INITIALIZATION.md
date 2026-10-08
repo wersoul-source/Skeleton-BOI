@@ -1,13 +1,18 @@
-# Initialization workflow
+# Initialization contract
 
-1. Inspect destination and existing architecture without mutating it.
-2. Ask the five questions from README once; reuse known answers.
-3. Record answers in q1–q5. Explicit unknown is acceptable for scaffold planning, not authorization to invent behavior.
-4. Choose minimal profile and physical paths. For Mobile use desktop + overrides. Record selection and alternatives in ADR.
-5. Run preview; resolve path/conflict errors by selecting a fresh directory, never by deleting user work.
-6. Apply, validate and inspect output. Copy starter guidance/tooling into a new product only; add product README and SYSTEM_FLOW.md.
-7. Fill handoff with unknowns and exact evidence. Stop at STRUCTURE_READY.
+READ → ASK_FIVE → WAIT_ANSWERS → REVIEW_EXAMPLES → CLONE_TO_SELECTED_DESTINATION → ADAPT → VALIDATE → STRUCTURE_READY → ASK_APPEARANCE → WAIT_UI_ANSWER
 
-Config schema: exactly project (lowercase slug), profile (web/desktop/cli/service/data), answers (five nonempty strings q1–q5), paths (zero or more known role overrides). Resolved config contains all eight paths. UTF-8 Thai text is supported. Role paths are portable ASCII relative paths, distinct, not nested, and cannot overlap template tooling.
+Canonical workflow อยู่ใน START_HERE_AGENT.md; README สรุป 5 คำถาม; AGENTS.md ให้เริ่มทันทีเมื่อ Agent อ่าน repo เพื่อสร้างโครงการ
 
-Reinitialization: identical output is unchanged. Config edits require a fresh output plus reviewed migration; no --force switch exists. Existing projects are documentation mapping work, not generator overwrite targets.
+- ห้ามเขียนปลายทางก่อนผู้ใช้เลือก parent path/ชื่อ folder
+- usa.project.json หมายถึงตั้งต้นแล้ว ไม่ถาม/clone ซ้ำ
+- clone ไป final destination ใหม่ก่อนปรับ; generate ใน staging และ merge template files ด้วย diff
+- รักษางานผู้ใช้ history และ LICENSE; ไม่ push ต้นแบบ
+- ต้องมีแผนล่วงหน้า PLAN.md, SYSTEM_FLOW.md, map และ Credit
+- หลัง validation ถาม “เตรียมโครงสร้างเสร็จแล้ว ต้องการหน้าตาโปรแกรมแบบไหนครับ” แล้วรอ
+
+Config: exactly project (lowercase slug), profile (web/desktop/cli/service/data), answers (q1–q5 nonempty strings), paths (known role overrides). ใส่พื้นที่/ชื่อ folder ใน q5 เป็น planning text ไม่ใช่ executable code. Role paths เป็น relative portable ASCII; เนื้อหาไทยรองรับ
+
+Unknown ยอมรับสำหรับแผน แต่ไม่ใช่ข้อเท็จจริงหรือสิทธิ์เข้าถึง งานดูแล Skeleton-BOI ไม่เริ่ม questionnaire ใหม่ เปลี่ยน config ใช้ staging ใหม่และ review migration
+
+Credit: [Skeleton-BOI](https://github.com/wersoul-source/Skeleton-BOI)
