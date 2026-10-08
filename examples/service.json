@@ -1,0 +1,12 @@
+{
+  "project": "demo-service",
+  "profile": "service",
+  "answers": {
+    "q1": "ตัวอย่าง: เครื่องมือติดตามงานสำหรับทีม; วัดผลจากการค้นหาและติดตามงานได้",
+    "q2": "รูปแบบ service; platform และ offline ต้องยืนยันก่อน implementation",
+    "q3": "รับข้อมูลงาน → ตรวจ input → สร้างรายการ → ดูสถานะ; external integrations: none",
+    "q4": "ยังไม่เลือก framework; ไม่มีข้อมูลจริงในตัวอย่าง; ใช้ local workspace และไม่ deploy",
+    "q5": "รุ่นแรกวางโครงเท่านั้น; Dev เพิ่มหนึ่ง vertical slice และ acceptance tests; runtime NOT_RUN"
+  },
+  "paths": {}
+}
