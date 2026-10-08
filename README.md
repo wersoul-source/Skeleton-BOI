@@ -1,6 +1,8 @@
 <p align="center"><img src="assets/usa-banner.svg" alt="USA — Universal Structural Signature: adaptive paths, stable responsibilities" width="100%"></p>
 
-# USA · Universal Structural Signature
+# Skeleton-BOI
+
+USA · Universal Structural Signature
 
 **ลายเซ็นโครงสร้างโปรแกรม — เปลี่ยนรูปร่างได้ คงหน้าที่และการทำงานร่วมกัน**
 
@@ -16,8 +18,10 @@ USA ใน repository นี้เป็นชื่อแนวทางขอ�
 
 ```sh
 git clone https://github.com/wersoul-source/Skeleton-BOI.git
-cd usa-universal-structural-signature
+cd Skeleton-BOI
 ```
+
+หรือกด **Use this template → Create a new repository** บน GitHub เพื่อสร้างสำเนาในบัญชีของคุณ แล้ว clone สำเนานั้น
 
 เปิด coding agent ในโฟลเดอร์นี้ แล้วสั่ง:
 
